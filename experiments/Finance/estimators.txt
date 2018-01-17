@@ -1,0 +1,49 @@
+    clf =AdaBoostClassifier(base_estimator=DecisionTreeClassifier(max_depth = 2),n_estimators=500, algorithm="SAMME.R")
+
+Notes: increase n_estimators, consider averaging/bagging many runs
+
+------------------------------------------
+
+clf = RandomForestClassifier(n_estimators = 500, max_depth = 2)
+
+--------------------------------------------
+Bag of MLPs
+
+clfa = MLPClassifier(hidden_layer_sizes=(100,), max_iter = 500)
+clf = BaggingClassifier(clfa, n_estimators = 30, max_samples = 0.5, max_features = 0.5)
+
+Notes: Spend more time hp-tuning
+
+---------------------------------------------
+Bag o trees
+
+clfa = DecisionTreeClassifier()
+clf = BaggingClassifier(clfa, n_estimators = 30, max_samples = 0.5, max_features = 0.5)
+
+----------------------------------------------
+Bag o stumps
+
+clfa = DecisionTreeClassifier(max_depth = 1)
+clf = BaggingClassifier(clfa, n_estimators = 30, max_samples = 0.5, max_features = 0.5)
+
+----------------------------------------------
+Naive Bayes
+clf = GaussianNB()
+
+----------------------------------------------    
+Kneighbors
+clf = KNeighborsClassifier(n_neighbors = 2)
+clf = KNeighborsClassifier(n_neighbors = 128)
+
+Notes: uncorrelated fold by fold performance with others!! consider bagging
+
+----------------------------------------------
+    clf = LogisticRegression(C=100)
+
+--------------------------------------------
+And of course the holiest of all holy
+
+      clf = XGBClassifier(max_depth=5, learning_rate=0.1, n_estimators=100)
+
+
+

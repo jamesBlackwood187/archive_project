@@ -1,0 +1,33 @@
+from sklearn.manifold import TSNE
+import numpy as np
+from sklearn.cross_validation import StratifiedKFold
+from sklearn.ensemble import RandomForestClassifier, ExtraTreesClassifier, AdaBoostClassifier
+from sklearn.ensemble import GradientBoostingClassifier
+from sklearn.linear_model import LogisticRegression
+from sklearn.svm import SVC
+from sklearn.neighbors import KNeighborsClassifier
+from sklearn.neural_network import MLPClassifier
+
+def accuracy(predictions, actuals):
+    return float((np.sign(predictions) == np.sign(actuals)).sum()) / float(len(predictions))
+
+def load_data(holdout = 0.2):
+    my_data = np.genfromtxt('dataSet.csv', delimiter=',', skip_header = 1)
+    tI = 1-holdout
+    y = my_data[:tI*len(my_data),0]
+    y_holdout = my_data[tI*len(my_data):,0] 
+    X =  my_data[:tI*len(my_data),1:]
+    X_holdout =  my_data[tI*len(my_data):,1:]
+    return X,y,X_holdout, y_holdout
+
+
+if __name__ == '__main__':
+
+    np.random.seed(0)  # seed to shuffle the train set
+    X, y, X_hold, y_hold = load_data()
+
+    clf = RandomForestClassifier()
+    
+    clf.fit(X,y)
+    a=clf.score(X_hold,y_hold)
+    print a

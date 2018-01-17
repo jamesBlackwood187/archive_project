@@ -1,0 +1,16 @@
+models:
+
+LinearRegression()
+,SVR(kernel='linear',C=100, max_iter=1000000)
+,RandomForestRegressor(n_estimators=5000,
+                            criterion="mse",
+                            max_depth=2,)
+,KNeighborsRegressor(n_neighbors=5)
+,SVR(kernel='rbf', C = 100, gamma = 0.0000001)
+,SVR(kernel='rbf', C = 0.0000001)
+,xgboost.XGBRegressor(max_depth=5, learning_rate=0.001,n_estimators=800)
+,xgboost.XGBRegressor(max_depth=2, learning_rate=0.001,n_estimators=1500)
+,xgboost.XGBRegressor(max_depth=2, learning_rate=0.01,n_estimators=3000)
+,xgboost.XGBRegressor(max_depth=10, learning_rate=0.0005,n_estimators=3000)
+,Ridge(alpha=0.5)
+,Lasso(alpha=0.0001)

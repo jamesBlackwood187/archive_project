@@ -1,0 +1,7 @@
+,Target,acesPerSet_p1,acesPerSet_p2,avgSetsPerLoss_p1,avgSetsPerLoss_p2,avgSetsPerWin_p1,avgSetsPerWin_p2,avgSets_p1,avgSets_p2,bpfPerSet_p1,bpfPerSet_p2,bpsPerSet_p1,bpsPerSet_p2,date,dfPerSet_p1,dfPerSet_p2,fInPerSet_p1,fInPerSet_p2,fWonPerSet_p1,fWonPerSet_p2,game,major,player1Age,player1Hand,player1Height,player1Rank,player2Age,player2Hand,player2Height,player2Rank,playerWinPct_p1,playerWinPct_p2,sWonPerSet_p1,sWonPerSet_p2,surface,surfaceWinPctVsCarrerWinPct_p1,surfaceWinPctVsCarrerWinPct_p2,svGamePerSet_p1,svptPerSet_p1,svptPerSet_p2,top20WinPct_p1,top20WinPct_p2
+0,1.0,,,,,,,,,,,,,0.0,,,,,,,99999.0,1.0,31.3976728268,R,190.0,129.0,25.8042436687,L,190.0,43.0,,,,,Clay,,,,,,,
+1,1.0,,,,2.0,2.0,,2.0,2.0,,,,,0.0,,,,,,,100000.0,1.0,31.3976728268,R,190.0,129.0,25.8042436687,L,190.0,43.0,1.0,0.0,,,Clay,0.0,0.0,,,,,
+2,0.0,,,,,,,,,,,,,0.0,,,,,,,100001.0,1.0,32.9609856263,L,188.0,46.0,19.4743326489,R,198.0,21.0,,,,,Clay,,,,,,,
+3,1.0,,,,,,,,,,,,,0.0,,,,,,,100002.0,1.0,19.8877481177,R,188.0,122.0,25.6235455168,R,188.0,87.0,,,,,Clay,,,,,,,
+4,0.0,,,,,,,,,,,,,0.0,,,,,,,100003.0,1.0,25.0,R,183.0,241.0,30.2368240931,R,185.0,17.0,,,,,Clay,,,,,,,
+5,1.0,,,,,,,,,,,,,0.0,,,,,,,100004.0,1.0,18.6064339493,R,188.0,125.0,29.1334702259,R,178.0,36.0,,,,,Clay,,,,,,,
